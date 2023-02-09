@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header{
+        background-color: green;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+    }
+    nav{
+        float: left;
+        width: 30%;
+        height: 300px;
+        background-color: aquamarine;
+        padding: 20px;
+       
+    }
+    nav ul{
+       list-style-type: none;
+       padding: 0;
+    }
+    article{
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: grey;
+        height: 300px;
+    }
+    section::after{
+       content: "";
+       display: table;
+       clear: both;
+    }
+    footer{
+        background-color: bisque;
+        padding: 10px;
+        text-align: center;
+        color: blue;
+    }
+    @media(max-width :600px){
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+    }
+      
+    </style>
+</head>
+<body>
+    <header>
+       <H2>Venta de electrodomesticos</H2> 
+    </header>
+    <section>
+        <nav>
+            <ul>
+            <li><a href="">Secciones</a></li>
+            <li><a href="">Sucursales</a></li>
+            <li><a href="">Contacto</a></li>
+         </ul>
+        </nav>
+        <article>
+            <h1>
+                Lista de telefonos
+            </h1>
+            <p>
+                llslslsllslsldlskdkldlkdlljftgsdvdhhchjhzjhsdjhdhhhhddhdhdhsdhkshkshddbhhhhhhhhhhhhhhhhh
+            </p>
+            <p>
+                kdjikjieihfujehfjhshfhejhfjhjghfabfjgggggggfdhr
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>Tienda en linea &copy; 2023</p>
+    </footer>
+    <h1>Perez Rojas Angel 4AVP &copy; 8/2/23</h1>
+</body>
+</html>

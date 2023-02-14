@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario html</title>
+   
+</head>
+<body>
+    <h1>Formularios HTML</h1>
+    <label for="nombre">Nombre</label>
+    <input type="text" placeholder="Teclea el nombre del usuario" required><br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" placeholder="Teclea la edad" required><br>
+
+    <input type="radio" name="sexo" required> Femenino
+    <input type="radio" name="sexo" required> Masculino
+    <br>
+
+    <label for="direccion">Direccion</label><br>
+    <textarea name="direccion" id="" cols="30" rows="10" placeholder="Teclea direcion"></textarea>
+    <br> 
+    <label for="escuela">Escuela</label>
+
+    <select name="escuela" id="" >
+      <option value="">Selecciona una escuela</option>
+      <option value="">CETIS 107</option>
+      <option value="">Cbtis 224</option>
+      <option value="">Otras</option>
+
+    </select>
+    <br><br>
+    <label for="materias">Materias cursadas</label> <br>
+    <input type="checkbox" name="materias []">Fisica<br>
+    <input type="checkbox" name="materias []">Calculo diferencial <br>
+    <input type="checkbox" name="materias []">Ingles<br>
+    <input type="checkbox" name="materias []">Programacion WEB<br><br>
+
+    <label for="color">Color preferido:</label>
+    <input type="color" required><br><br>
+
+    <label for="imagem_perfil"><b>Imagen de perfil</b></label>
+
+    <input type="file" accept="png/jpg"><br><br>
+    <input type="submit" value="Guardar alumno"><br><br><br>
+
+    <div style="background-color: aquamarine;border: 10px;">
+        Alumno:Angel Perez Rojas Fecha: 03/02/23 - &copy; 2023 -angeleduardo16688@gmail.com
+    </div>
+</body>
+</html>

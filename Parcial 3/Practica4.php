@@ -94,10 +94,10 @@ if($calificacion >= 0 && $calificacion <=5){
 
 }else if($calificacion >=6 && $calificacion <=8){
     echo "<h3>Calificacion:".$calificacion.",Aprobado regular(Se requiere mas esfuerzo)</h3>";
-    echo "<img src ='regular.jpg' width='10%'><hr>"
+    echo "<img src ='regular.jpg' width='10%'><hr>";
 }else if($calificacion >=8 && $calificacion <=10){
     echo "<h3>Calificacion:".$calificacion.",Aprobado felicidades !!</h3>";
-    echo "<img src ='bien.jpg' width='10%'><hr>"
+    echo "<img src ='bien.jpg' width='10%'><hr>";
     
 }
 

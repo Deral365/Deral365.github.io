@@ -10,14 +10,14 @@ return;
 }
 if($cuadros[0]== "X" &&  $cuadros[1] == "X" && $cuadros[2] == "X"){
     echo "<h1>Ganador X</h1>";
-    echo"<h1>[O][O][O] <br>
+    echo"<h1>[X][X][X] <br>
 [ ][ ][ ]<br>
 [ ][ ][ ] <br></h1>";
     return;
 }
 else if($cuadros[0]== "O" &&  $cuadros[1] == "O" && $cuadros[2] == "O"){
 echo "<h1>Ganador O</h1>";
-echo"<h1>[X][X][X] <br>
+echo"<h1>[O][O][O] <br>
 [ ][ ][ ]<br>
 [ ][ ][ ] <br></h1>";
 }
@@ -152,5 +152,7 @@ echo"<h1>[ ][ ][O] <br>
 [ ][ ][O] <br></h1>";
 
 }
+
+
 
 ?>

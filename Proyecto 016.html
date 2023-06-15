@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario optimitizado</title>
+    <style>
+        td{
+            background-color: aqua;
+            height: 20px;
+            width: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <center>
+    <caption>Calendario Agosto del 2006</caption>
+    <table>
+    <script>
+        let num=0;
+        let aux=0;
+
+        for(let i=0;i<5;i++){    
+             document.write("<tr>");  
+                for(let j=0;j<7;j++){
+                    if(num==31){
+                        i=5;
+                        j=4;
+                       
+                    }
+                    if(num==0 || num==1 || num==2){
+                        document.write("<td>"+ " "+ "</td>");
+                    }else{   
+                        aux++;
+                        document.write("<td>"+  aux + "</td>"); 
+                    }
+                 
+                num++;
+                       
+                }
+                document.write("<tr>");
+        }
+    </script>
+  </table>
+</center>
+</body>
+</html>

@@ -31,12 +31,13 @@
     <h1>Practica 7 tablero de serpientes y escaleras</h1>
    
         <form action=""> 
+            <input type="submit" value="jugar" method="Post">
             <div class= "row">
             <?php  
               for($i=100; $i >0; $i--){ 
-                if ($i == 4 || $i == 4 || $i == 4 || ){
+                if ($i == 4 || $i == 4 || $i == 4){
                 echo "<div class='col-1 card  m-1 casilla' style='background-color:".$colores[rand(0,5)]."'>".$i."</div>";
-              }else if{
+              }else if(){
                 echo "<div class='col-1 card  m-1 casilla' style='background-color:".$colores[rand(0,5)]."'>".$i."</div>";
               }elseif () {
                 

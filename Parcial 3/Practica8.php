@@ -11,15 +11,58 @@
     <div class="container">
         <h1>juego de la loteria</h1><hr>
         <form action="Practica8.php" method="POST">
+            <?php
+             if(isset($_POST["carta1"])){
+              $carta1= $_POST["carta1"];
+              $carta2= $_POST["carta2"];
+                     
+              
+              $carta = rand(1,54);
+              if (isset($_POST["cartas_dadas"])) {
+                $cartas_dadas=$_POST["cartas_dadas"];
+            
+              }else {
+                $cartas_dadas=[];
+              }
+              array_push($cartas_dadas,$carta);
+              var_dump($cartas_dadas);
+             }else{
+
+                $carta1=[];
+                $total = 0;
+                while ($total < 16){
+                    $numero = rand(1,54); 
+                    if(array_search($numero,$carta1)===false){
+                        $carta1[$total]=$numero;
+                        $total ++;
+                    }
+                }
+                $carta2=[];
+                $total = 0;
+                while ($total < 16){
+                    $numero = rand(1,54); 
+                    if(array_search($numero,$carta2)===false){
+                        $carta2[$total]=$numero;
+                        $total ++;
+                    }
+                }
+             }
+
+            ?>
             <input type="submit" value="Dar carta" name="carta" class="btn btn-primary">
             <div class="row">
             <div class="col-6">
             <div class="row m-1">
+
                 <?php
-                for ($i=0; $i < 16; $i++) { 
-                    $numero = rand(1,54);
-                     
-                    echo "<div class='col-3 p-0'><img src='fotos_loteria/".$numero.".jpeg' class='img-thumbnail'></div>";
+                for ($i=0; $i < 16; $i++){ 
+                   
+                     if(array_search($carta1[$i],$cartas_dadas)){
+
+                     }
+                    echo "<div class='col-3 p-0'><img src='fotos_loteria/".$carta1[$i].".jpeg' class='img-thumbnail'></div>";
+                    echo "<input type='hidden' name='carta1[]' value'".$carta1[$i]."'>";
+                    
                 }
                 ?>
                 </div>
@@ -30,9 +73,10 @@
                 <div class="row m-1">
             <?php
                 for ($i=0; $i < 16; $i++) { 
-                    $numero = rand(1,54);
+                   
                      
-                    echo "<div class='col-3 p-0'><img src='fotos_loteria/".$numero.".jpeg' class='img-thumbnail'></div>";
+                    echo "<div class='col-3 p-0'><img src='fotos_loteria/".$carta2[$i].".jpeg' class='img-thumbnail'></div>";
+                    echo "<input type='hidden' name='carta1[]' value'".$carta2[$i]."'>";
                 }
                 ?>
               </div>
